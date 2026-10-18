@@ -23,7 +23,7 @@ Tech Stack
 
 ## 👩‍💻 Developed By
 **Shrutika Wankhede**
-MCA - Ajeenkya DY Patil University, Pune
+MCA - SGBAU Amaravati 
 Email: wankhadeshruti2226@gmail.com
 
 ---
