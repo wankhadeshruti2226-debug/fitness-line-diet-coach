@@ -1,30 +1,24 @@
+Fitness Line - Personalized Fitness & Diet Coach
 
-Fitness Line - AI Diet Coach 🥗
+AI-Based Personalized Diet Planner System - PGDCST Final Year Project
 
-> Internship Project @ SOFTTRONIX | MCA Sem-IV | Ajeenkya DY Patil University
+📋 Project Overview (As per Report Chapter 1)
+A web-based intelligent platform that provides customized diet plans based on user's age, weight, height, gender, activity level, dietary preference and health goals. Calculates BMI, daily calorie requirements and suggests suitable mealsFeatures (Chapter 2.2)
+1.  **User Registration & Login Module (5.1.1, 5.1.2)**
 
-An AI-based personalized diet planner that suggests diet based on BMI, age, and preferences.
+2.  **User Profile Management (5.1.3)** - Update height, weight, activity, diet preference
+3.  **BMI & Calorie Calculation (5.1.4)** - Auto calculation based on formula
+4.  **Personalized Diet Plan Generation (5.1.5)** - Breakfast, Lunch, Dinner, Snacks
+5.  **Recipe Recommendation (5.1.6)** - Veg/Non-Veg/Vegan with ingredients & steps
+6.  **Nutritional Tracking**
+7.  **Workout Planner**
+8.  **Expert Talk / Tips**
+9.  **User-Friendly Interface**
 
-Features
-- BMI Calculator & Health Analysis
-- Personalized Veg/Vegan Diet Generation
-- Calorie Tracking & Macro Calculation
-- Recipe Recommendation System
-- User Dashboard
+ Tech Stack (Chapter 3.2.1)
+- **Language:** Python
+- **Framework:** Flask (Web Framework)
+- **Database:** SQLite / MySQL (as per report)
+- **Frontend:** HTML, CSS
 
-Tech Stack
-- **Frontend:** HTML5, CSS3, JavaScript
-- **Backend:** Python Flask
-- **Database:** MySQL / SQLite
-- **Tools:** Git, GitHub
-
-## 📊 Project Report
-40+ pages documentation available with DFD, ER Diagram, Use Cases.
-
-## 👩‍💻 Developed By
-**Shrutika Wankhede**
-MCA - SGBAU Amaravati 
-Email: wankhadeshruti2226@gmail.com
-
----
-⭐ Star this repo if you like it!
+📁 Project Structure
