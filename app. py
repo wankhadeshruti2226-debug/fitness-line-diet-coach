@@ -1,0 +1,32 @@
+from flask import Flask, render_template_string, request, redirect, session
+
+app = Flask(__name__)
+app.secret_key = "fitness_secret"
+
+HOME = "<h1>Fitness Line - Personalized Fitness & Diet Coach</h1><p>AI Based Diet Planner</p><a href='/register'><button>Get Started</button></a> <a href='/login'>Login</a>"
+REG = "<h2>Register</h2><form method='post'>Name:<input name='name'><br>Email:<input name='email'><br>Pass:<input name='password' type='password'><br><button>Register</button></form>"
+LOGIN = "<h2>Login</h2><form method='post'>Email:<input name='email'><br>Pass:<input name='password' type='password'><br><button>Login</button></form>"
+DASH = "<h2>Good Morning {{n}}!</h2><p>Today's Schedule: Greek Yogurt Bowl, Grilled Salmon, Upper Body Power</p><a href='/diet-planner'>Diet Planner</a> | <a href='/workout'>Workout</a>"
+DIET = """
+<h2>Diet Planner Page</h2>
+<form method='post'>
+Age:<input name='age' value='45'> Weight:<input name='weight' value='100'> Height:<input name='height' value='80'><br><br>
+Goal:<select name='goal'><option>Weight Loss</option><option>Weight Gain</option></select>
+Diet:<select name='pref'><option>Veg</option><option>Non-Veg</option></select>
+Activity:<select name='activity'><option>Active</option></select><br><br>
+<button>Generate Diet Plan</button>
+</form>
+{% if bmi %}<h3>BMI: {{bmi}} - {{cat}}</h3><p><b>Suggested Diet Plan:</b> Oats, Dal Rice, Soup Paneer</p><p><b>Recipe:</b> Paneer Chilla, Rajma</p>{% endif %}
+"""
+
+@app.route("/")
+def home(): return render_template_string(HOME)
+
+@app.route("/register", methods=["GET","POST"])
+def reg():
+    if request.method=="POST":
+        session["name"]=request.form["name"]
+        return redirect("/dashboard")
+    return render_template_string(REG)
+
+@app.route
